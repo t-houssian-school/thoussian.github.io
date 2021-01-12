@@ -1,0 +1,9 @@
+header img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.highlight p:hover{
+    color: rgb(0, 255, 200);
+}
