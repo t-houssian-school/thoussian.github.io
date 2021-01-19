@@ -17,7 +17,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-header, main, footer {
+header, footer {
     margin: 1.25em auto;
     padding: .5em;
     max-width: 85%;
@@ -31,6 +31,7 @@ header, footer, footer a {
 }
 
 header img {
+    /* max-width: %; */
     float: right;
     border-radius: 1px;
     margin: 0.75em;
@@ -62,10 +63,10 @@ li {
     color: #ffe70e
 }
 
-.grid-container {
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     text-align: center;
   }
 
@@ -91,17 +92,17 @@ li {
 }
 
 
-@media screen and (max-width: 600px) {
-    header, main, footer {
+@media screen and (max-width: 768px) {
+    header, footer {
         margin: 1.25em auto;
         padding: .5em;
-        max-width: 90%;
+        max-width: 95%;
     }
 
-    .grid-container {
+    main {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
         text-align: center;
       }
     
@@ -127,17 +128,19 @@ li {
     }
   }
 
-  @media screen and (max-width: 992px) {
-    header, main, footer {
-        margin: 1.25em auto;
+  @media screen and (min-width : 768px) and (max-width: 992px) {
+    header, footer {
+        margin: 1.25em;
         padding: .5em;
         max-width: 90%;
     }
 
-    .grid-container {
+    main {
+        margin: 1.25em;
+        max-width: 70%;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
         text-align: center;
       }
     
@@ -149,17 +152,17 @@ li {
     }
     
     .grid-item-2 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
     
     .grid-item-3 {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
     }
   }
 
