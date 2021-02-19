@@ -1,0 +1,21 @@
+
+img[src="images/place.png"],
+img:not([src]) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+body {
+    margin-bottom:500px
+}
