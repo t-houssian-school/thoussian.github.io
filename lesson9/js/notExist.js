@@ -24,7 +24,7 @@ fetch(requestURL)
         eye_color.textContent = "Eye Color: " + person.personal.eye_color;
         city_country.textContent = "City/Country: " + person.personal.city + ", " + person.personal.country;
         children.textContent = "Number Of Children: " + person.marriage.children;
-        if (person.marriage.children > 0 || person.marriage.children === undefined) {
+        if (person.marriage.children == 0 || person.marriage.children === undefined) {
             children.textContent = "Number Of Children: Not Married";
           }
         ip.textContent = "IP: " + person.online_info.ip_address;
