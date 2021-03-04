@@ -1,0 +1,22 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+section {
+    background-color: gray;
+    border: 1px solid #000000;
+}
+
+img {
+    width: 55%;
+    box-shadow: 3px 3px black ;
+}
+
+main {
+    margin: 1em;
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+}
