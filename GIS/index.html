@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Earthquake Map</title>
+    <style>
+      html, body, #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      h2 {
+          text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.15/"></script>
+    <script src="map.js"></script>
+  </head>
+  <body>
+    <h2 id="title"></h2>
+    <div id="viewDiv"></div>
+    <script>
+        document.getElementById("title").innerHTML = "Earthquake Map"
+    </script>
+  </body>
+</html>
