@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>jquery</h2>
+    <p id="p1">Hover Here</p>
+    <p id="p2">Click Here</p>
+    <p id="p3">Double Click Here</p>
+    <p id="p4">Move your mouse from here</p>
+    <p id="p5">Push any key down</p>
+    <p id="p6">Push the key back up</p>
+    <p id="p7">Click Me once!</p>
+    <script>
+        let count = 0;
+        $(document).ready(function()
+        {
+            $("#p1").hover(function(){
+                $(this).hide();
+            });
+            $("#p2").click(function(){
+                $(this).hide();
+            });
+            $("#p3").dblclick(function(){
+                $(this).hide();
+            });
+            $("#p4").mouseout(function(){
+                $(this).hide();
+            });
+            $("body").keydown(function(e){
+                if (e.which != 32){
+                    $("p").css({"color": "purple", "font-size": "200%"});
+                }
+            });
+            $("body").keyup(function(e){
+                if (e.which != 32){
+                    $("p").css({"color": "black", "font-size": "100%"});
+                } 
+            });
+            $("body").keypress(function(e){
+                if (e.which == 32 && count % 2 == 0){
+                        console.log('space')
+                        $("body").css("background-color", "blue");
+                        count++;
+                }
+                else if (e.which == 32){
+                        $("body").css("background-color", "white");
+                        count++;
+                }
+            });
+            $(document).on('keypress',function(e) {
+                if(e.which == 13) {
+                    alert('You pressed enter!');
+                }
+            });
+
+            $( "h2" ).on( "click", function() {
+                alert( "<h2> was clicked" );
+            });
+
+            $( "#p7" ).one( "click", function() {
+                alert( "You just clicked this for the first time!" );
+            $( this ).click(function() {
+                alert( "You have clicked this before!" );
+            });
+        });
+        })
+    </script>
+</body>
+</html>
