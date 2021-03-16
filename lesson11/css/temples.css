@@ -1,0 +1,20 @@
+section {
+    background-color: white;
+    width: 95%;
+    margin: 2em;
+    padding: 0.5em;
+    text-align: center;
+    border-style: solid;
+}
+
+#temples {
+    border-style: none;
+}
+
+section img {
+    width: 80%;
+}
+
+body {
+    background-color: cornflowerblue;
+}
