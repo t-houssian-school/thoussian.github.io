@@ -1,0 +1,100 @@
+body {
+    background-image: url("../images/night.png");
+    font-family: 'Cute Font', cursive;
+}
+
+main h1 {
+    color: #F90B6D; 
+    font-size: 7em;
+    margin: .01em 0;
+}
+
+main p {
+    font-size:2em;
+}
+
+main h3 {
+    font-size:2em;
+}
+
+main h4 {
+    font-size:1.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    grid-gap: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.summary {
+    background-color: #0064c2;
+    color: white;
+    margin-bottom: 1em;
+    padding-top: 0.1em;
+    margin-top: 0.9em;
+    border-radius: 50%;
+}
+
+.wrap-1 {
+    text-align: right;
+    display: inline-block;
+}
+
+.wrap-2 {
+    text-align: left;
+    display: inline-block;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    line-height: 2em;
+}
+
+
+.grid-2 .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1024px){
+    .grid-1 {
+        margin-bottom: 1em;
+    }
+    .summary {
+        background: rgba(54, 30, 110, 0.068);
+        color: white;
+    }
+    .summary p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    main {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    
+    .grid-2 img {
+        width: 8em;
+        background-color: #F90B6D;
+        border-radius: 50%;
+        margin: 0.2em;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .summary {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+

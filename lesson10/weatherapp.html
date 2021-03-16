@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Rexburg, ID</h1>
+        <div class="grid-1">
+            <div class="summary">
+                <div class="container">
+                    <div class="wrap-1">
+                        Currently:<br>
+                        High:<br>
+                        Low:<br>
+                        Wind Speed:<br>
+                        Wind Chill:<br>
+                        Humidity:<br>
+                    </div>
+                    <div class="wrap-2">
+                        <span id="description">Sunny</span><br>
+                        <span id="temp-high">49</span>°F<br>
+                        <span id="temp-low">47</span>°F<br>
+                        <span id="wind-speed">5</span> mph<br>
+                        <span id="wind-chill">0</span>°F<br>
+                        <span id="humidity"></span>%<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="cards">
+                <div class="card">
+                    <div class="container-1">
+                        <h4><b><span id="day-1"></span></b></h4>
+                      </div>
+                    <img id="day-1-img" src="images/sun+sunny+weather+icon-1320195461862997487_128.png" alt="Sunny">
+                    <div class="container-2">
+                      <p><span id="day-1-temp"></span>°F</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container-1">
+                        <h4><b><span id="day-2"></span></b></h4>
+                      </div>
+                    <img id="day-2-img" src="images/sun+sunny+weather+icon-1320195461862997487_128.png" alt="Sunny">
+                    <div class="container-2">
+                      <p><span id="day-2-temp"></span>°F</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container-1">
+                        <h4><b><span id="day-3"></span></b></h4>
+                      </div>
+                    <img id="day-3-img" src="images/forecast+sun+weather+icon-1320184881471073011_128.png" alt="Sunny">
+                    <div class="container-2">
+                      <p><span id="day-3-temp"></span>°F</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container-1">
+                        <h4><b><span id="day-4"></span></b></h4>
+                      </div>
+                    <img id="day-4-img" src="images/weather+icon-1320087273185061618_128.png" alt="Sunny">
+                    <div class="container-2">
+                      <p><span id="day-4-temp"></span>°F</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container-1">
+                        <h4><b><span id="day-5"></span></b></h4>
+                      </div>
+                    <img id="day-5-img" src="images/sun+sunny+weather+icon-1320195461862997487_128.png" alt="Sunny">
+                    <div class="container-2">
+                      <p><span id="day-5-temp"></span>°F</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="js/weather2.js"></script>
+
+</body>
+</html>
