@@ -1,4 +1,4 @@
-const url ="http://www.ahfx.com/events.php";
+const url ="https://www.ahfx.com/events.php";
 fetch(url)
     .then((response) => response.json())
     .then((jsObject) => {
