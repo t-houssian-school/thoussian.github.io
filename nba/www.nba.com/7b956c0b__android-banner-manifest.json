@@ -1,0 +1,13 @@
+{
+  "name": "NBA: Live Games & Scores",
+  "short_name": "NBA",
+  "description": "Follow the action on NBA scores, schedules, stats, news, teams, and players. Buy tickets or watch the games anywhere with NBA League Pass.",
+  "display": "standalone",
+  "background_color": "#051c2d",
+  "theme_color": "#ffffff",
+  "prefer_related_applications": true,
+  "related_applications": [{
+    "platform": "play",
+    "id": "com.nbaimd.gametime.nba2011"
+  }]
+}
