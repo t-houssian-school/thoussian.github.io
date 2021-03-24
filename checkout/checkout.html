@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <section class="section-1">
+        <ul class="progress">
+            <li class="circle"><span class="material-icons">
+                check_circle
+                </span></li>
+            <li><hr></li>
+            <li><span class="material-icons">
+                fiber_manual_record
+                </span></li>
+            <li><hr></li>
+            <li><span class="material-icons">
+                panorama_fish_eye
+                </span>
+        </ul>
+        <div></div>
+        <h2>Order Summary</h2>
+        <table>
+        <tr>
+            <td class="notnums">Order Subtotal</td>
+            <td class="nums">$ 46.95</td>
+        </tr>
+        <tr>
+            <td class="notnums">Shipping and Handling</td>
+            <td class="nums">$ 6.00</td>
+        </tr>
+        <tr>
+            <td class="notnums">Shipping and Handling</td>
+            <td class="nums">$ 8.05</td>
+        </tr>
+        <tr colspan='2'>
+            <td><hr></td>
+        </tr>
+        <tr>
+            <td class="notnums">Payment Due</td>
+            <td class="nums" id="blue">$ 61.00</td>
+        </tr>
+        </table>
+        <p class="terms"><a href="#">Return to cart</a></p>
+        <!-- <img src="images/login-card-bg.jpg" alt="background image" class="bg"> -->
+    </section>
+    <section class="section-2">
+        <div class="top">
+            <img src="images/visa-48.png" alt="Visa"><img id="paypal" src="images/paypal-3-48.png" alt="paypal">
+        </div>
+        <h2>Payment Details</h2>
+        <div class="input">
+            <label for="fullname">Cardholder Name</label><input id="fullname" type="text" placeholder="Name">
+        </div>
+        <div class="input">
+            <label for="ccn">Card Number</label><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="nope" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+        <div class="input" id="expire">
+            <div id="exp-1">
+                <label for="card">Expiration Date</label>
+                <div id="label-1">
+                    <div id="labe-1">
+                        <label for="month">Month</label><input id="month" type="number" min="01" max="12" step="1" value="01" />
+                    </div>
+                    <div id="labe-2">
+                        <label for="year">Year</label><input id="year" type="number" min="1900" max="2099" step="1" value="2016" />
+                    </div>       
+                </div>     
+            </div>
+            <div id="exp-2">
+                <label for="cvv"> CVV【﻿？】</label><br><input class="required" id="field" type="number" max="999" pattern="([0-9]|[0-9]|[0-9])" value="000" name="cvv"/>
+            </div>
+        </div>
+        <div class="input">
+            <label for="address">Billing Address</label><input type="text" value="222 West Main Street">
+        </div>
+        <div class="input">
+            <input type="checkbox"><label id="notop" for="same">Same as shipping address</label>
+        </div>
+        <div class="buttons">
+            <div class="button-1">
+                <button class="button">
+                    Next
+                </button>
+            </div>
+            <div class="button-2">
+                <p class="terms"><a href="#">Cancel</a></p>
+            </div>
+        </div>
+        <p id="end"><span class="material-icons">
+            lock
+            </span> This is a Secure Transaction</p>
+    </section>
+</body>
+</html>
