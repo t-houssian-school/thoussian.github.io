@@ -11,7 +11,12 @@ fetch(requestURL)
         document.getElementById("temp-high").innerHTML = table.main.temp_max;
         document.getElementById("temp-low").innerHTML = table.main.temp_min;
         document.getElementById("wind-speed").innerHTML = table.wind.speed;
-        document.getElementById("wind-chill").innerHTML = table.wind.deg;
+        let wind_chill = 0
+        s = table.wind.speed ** 0.16
+        if (table.wind.speed > 3 && table.main.temp <= 50){
+            wind_chill = Math.round(35.74 + (0.6215*table.main.temp) - (35.75*s) + 0.4275*table.main.temp*s)
+        }
+        document.getElementById("wind-chill").innerHTML = wind_chill;
         document.getElementById("humidity").innerHTML = table.main.humidity;
         // table.list[0].weather[0].icon+".png";
         // table.list[0].weather[0].description;

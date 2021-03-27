@@ -1,0 +1,57 @@
+body {
+    background: black;
+}
+
+.dad-bg {
+    background: url('../images/dad-jokes.jpg') no-repeat;
+    width: 700px;
+    height: 700px;
+    margin:0 auto;
+    font-family: 'Coming Soon', cursive;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px){
+    .dad-bg {
+        width: 90%;
+        height: 700px;
+    }
+}
+
+#dad-joke {
+    grid-column: 1;
+    align-self: center;
+    font-size: 2em;
+    padding-left: 0.7em;
+}
+
+#dad-joke.small {
+    font-size: 1.7em;
+}
+
+.joke-button {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+/* Button */
+button {
+	height: 5em;
+	width: auto;
+	background: ivory;
+	display: block;
+	margin: 0 auto;
+	border-radius: 20px;
+	text-align: center;
+    transition-duration: 0.3s;
+    outline:none;
+}
+
+button:hover {
+    background-color: #000000; /* Green */
+    color: white;
+}
