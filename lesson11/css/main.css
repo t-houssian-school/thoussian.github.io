@@ -33,6 +33,10 @@ nav {
     display: none;
 }
 
+#navigation button {
+    display: none;
+}
+
 #navigation a:hover {
     background-color:#52AFB5;
 }
@@ -50,7 +54,11 @@ nav {
     font-weight: bold;
 }
 
-#navigation.responsive li {
+#navigation.responsive li{
+    display: block;
+}
+
+#navigation.responsive button {
     display: block;
 }
 
