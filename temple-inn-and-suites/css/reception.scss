@@ -93,8 +93,62 @@ footer {
     padding: 2em;
 }
 
+main{
+    h2{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+    div {
+        text-align: center;
+    }
+    img{
+        width: 90%;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    p, li {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+    li {
+        line-height: 1.5em;
+    }
+}
+
 @media only screen and (min-width: 768px){
-    
+    main{
+        h2{
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-size: 2em;
+        }
+        div {
+            text-align: center;
+        }
+        img{
+            width: 80%;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+        p, li {
+            margin-left: 8em;
+            margin-right: 8em;
+        }
+        li {
+            line-height: 1.5em;
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px){
