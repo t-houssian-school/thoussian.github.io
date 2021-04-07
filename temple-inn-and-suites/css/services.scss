@@ -1,0 +1,118 @@
+$primary: #164555;
+$secondary: #E8DDCF;
+$secondarytrans: #e8ddcfaf;
+$third: #BCD3DA;
+$fourth: #0F5758;
+$fourthlight: #136f70;
+$fourthlighter: #157f81;
+$fifth: #DB3542;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;;
+}
+
+body p, li, a {
+    font-family: 'Oxygen', sans-serif;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: $primary;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;    
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#background a:hover{
+    background-color:$fourth;
+}
+
+#navigation .selected {
+    background-color:$fourthlight;
+}   
+
+#navigation .selectservice {
+    background-color:$fourthlighter
+}  
+
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+#navigation li:hover ul {
+    display: block;
+}
+
+#navigation li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    margin-top: 2em;
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+@media only screen and (min-width: 768px){
+    
+}
+
+@media only screen and (min-width: 1024px){
+    nav {
+        max-width: 100%;
+    }
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+
+        li:not(.service):first-child{
+            display: none;
+        }
+    }
+    #navigation li{
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus{
+        text-align: center;
+    }
+
+}
